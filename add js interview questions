@@ -1,0 +1,62 @@
+let a=100,b=500;
+let result=Math.max(a,b)
+console.log(result)
+
+let arr=[1,[2,[3,4,[5]]]];
+let result=arr.flat(Infinity);
+console.log(result)
+
+function Flatten(arr){
+    let ar=arr.join(",").split(",");
+    let result=[];
+    for(let i=0;i<ar.length;i++){
+        result.push(parseInt(ar[i]))
+    }
+    return result
+}
+console.log(Flatten(arr))
+
+let arr=[1,2,3,4,5,6,7,8,9,10];
+
+even number
+let evenNum=arr.filter(val=>val%2===0)
+console.log(evenNum)
+
+odd num
+let oddnum=arr.filter(val=>val%2)
+console.log(oddnum)
+
+return even for true and odd for false
+let num=[]
+let result=arr.filter(val=>{
+    if(val%2===0){
+        num.push(true)
+    }
+    else{
+        num.push(false)
+    }
+})
+console.log(num)
+
+sum of even number from array
+let result=arr.filter(val=>val%2).reduce((preVal,curVal)=>{
+    return preVal+curVal
+})
+console.log(result)
+
+BS and MUI both are framworks used to design web/mobile application. Bootstrap is a front-end framwork and MUI is React component library 
+
+git add -> purpose add chnages working directory to the staging area
+
+let arr=[10,[20,[30,40],[50]]];
+function F(arr){
+    let r=arr.join(",").split(",");
+    let result=[];
+    for(let i=0;i<r.length;i++){
+        result.push(parseInt(r[i]))
+    }
+    return result.reduce((a,b)=>Math.max(a,b))
+}
+console.log(F(arr))
+
+
